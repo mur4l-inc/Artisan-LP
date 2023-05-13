@@ -26,11 +26,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-google-forms-hooks": "^1.2.4",
+    "react-icons": "^4.8.0",
     "styled-components": "^6.0.0-rc.1",
     "tailwindcss": "^3.3.2",
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@types/react-icons": "^3.0.0",
     "@types/styled-components": "^5.1.26"
   }
 }
