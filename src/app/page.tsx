@@ -1,4 +1,3 @@
-'use client';
 import Image from 'next/image'
 import MyComponent from './MyComponent';
 import Nav from '@/components/Nav';

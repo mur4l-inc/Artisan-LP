@@ -3,6 +3,7 @@ import MenuItem from './MenuItem'
 import { FaBeer } from 'react-icons/fa'
 import { AiFillHome, AiFillInfoCircle } from 'react-icons/ai'
 import Link from 'next/link'
+import DarkModeSwitch from './DarkModeSwitch'
 
 export const Header = () => {
   return (
@@ -21,7 +22,8 @@ export const Header = () => {
         />
       </div>
 
-      <div className="logo">
+      <div className="flex items-center space-x-5">
+        <DarkModeSwitch />
         <Link href="/">
           <h2 className='text-lg'>
             <span className='font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1'>IMDb</span>

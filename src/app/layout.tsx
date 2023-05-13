@@ -1,6 +1,7 @@
 import { Header } from '@/components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Providers from '@/app/Providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,13 +16,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ja">
+    <html
+      lang="ja"
+    >
+      {/* style={{ colorScheme: 'light' }}
+      className="light" */}
       <body className={inter.className}>
-        {/* {Header} */}
-        <Header />
+        <Providers>
+          {/* {Header} */}
+          <Header />
 
-        {/* {Navbar} */}
-        {children}
+          {/* {Navbar} */}
+          {children}
+        </Providers>
       </body>
     </html>
   )
