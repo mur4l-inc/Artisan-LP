@@ -17,7 +17,7 @@ export const Header = () => {
         />
         <MenuItem
           title="ABOUT"
-          address="/"
+          address="/about"
           Icon={AiFillInfoCircle}
         />
       </div>

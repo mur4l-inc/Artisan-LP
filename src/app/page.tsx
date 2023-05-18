@@ -1,19 +1,46 @@
-import Image from 'next/image'
-import MyComponent from './MyComponent';
-import Nav from '@/components/Nav';
 
+// import Image from 'next/image'
+// import MyComponent from './MyComponent';
+// import Nav from '@/components/Navbar';
+import { IResult } from '@/interface';
+import Results from '@/components/Results';
 
-const Home: React.FC = () => {
+const API_KEY = process.env.API_KEY
+
+export default async function Home({ searchParams } : {searchParams?: any}) {
+  const genre = searchParams?.genre || 'fetchTrending';
+  // const genre = 'fetchTopRated';
+
+    // res = await fetch(`https://api.themoviedb.org/3/${genre === 'fetchTopRated'
+    //   ? 'movie/top_rated' :
+    //     'trending/all/week'
+    // }?api_key=${API_KEY}&language=en-US&page=1`, { next: {revalidate: 100000 }})
+  const res = await fetch(`https://api.themoviedb.org/3/${genre === 'fetchTopRated'
+      ? 'movie/top_rated' :
+        'trending/all/week'
+    }?api_key=${API_KEY}&language=en-US&page=1`, { cache: 'no-store' })
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+
+  const data = await res.json()
+
+  const results = data.results as IResult[]
+
+  console.log({results})
+
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1 className="text-red-900">test</h1>
+    {/* min-h-screen  */}
+      <main className="flex flex-col items-center justify-between p-4">
+        <h1>title</h1>
         {/* <Nav /> */}
         {/* <MyComponent /> */}
+        <Results results={results}></Results>
 
       </main>
     </>
   )
 }
 
-export default Home;
