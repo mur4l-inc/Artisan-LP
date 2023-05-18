@@ -18,12 +18,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+
+  /*
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  */
 }
 
 html::-webkit-scrollbar {
@@ -32,4 +35,17 @@ html::-webkit-scrollbar {
 
 html {
   scrollbar-width: none;
+}
+
+ruby[data-ruby] {
+  position:relative;
+}
+ruby[data-ruby]::before {
+  content: attr(data-ruby);
+  position:absolute;
+  left:-2em;
+  top:-1em;
+  right:-2em;
+  text-align:center;
+  font-size:.6em;
 }

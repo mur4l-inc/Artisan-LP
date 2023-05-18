@@ -23,17 +23,17 @@ export default function RootLayout({
       {/* style={{ colorScheme: 'light' }}
       className="light" */}
       <body className={inter.className}>
-        <Providers>
+        {/* <Providers> */}
           {/* {Header} */}
-          <Header />
+          {/* <Header /> */}
 
           {/* {Navbar} */}
-          <Navbar />
+          {/* <Navbar /> */}
 
           {/* <SearchBox /> */}
 
           {children}
-        </Providers>
+        {/* </Providers> */}
       </body>
     </html>
   )

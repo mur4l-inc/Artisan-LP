@@ -1,39 +1,87 @@
 
 // import Image from 'next/image'
-// import MyComponent from './MyComponent';
-// import Nav from '@/components/Navbar';
+import MyComponent from './MyComponent';
+import Nav from '@/components/Navbar';
 import { IResult } from '@/interface';
 import Results from '@/components/Results';
+import Image from 'next/image';
 
-// export const dynamic='force-dynamic';
 const API_KEY = process.env.API_KEY
 
 export default async function Home() {
-  // const genre = 'fetchTopRated';
-
-    // res = await fetch(`https://api.themoviedb.org/3/${genre === 'fetchTopRated'
-    //   ? 'movie/top_rated' :
-    //     'trending/all/week'
-    // }?api_key=${API_KEY}&language=en-US&page=1`, { next: {revalidate: 100000 }})
-  const res = await fetch(`https://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}&language=en-US&page=1`, { cache: 'no-store' })
-
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
-
-  const data = await res.json()
-
-  const results = data.results as IResult[]
-
-  console.log({results})
 
   return (
     <>
     {/* min-h-screen  */}
-      <main className="flex flex-col items-center justify-between p-4">
+      <main className="">
         {/* <Nav /> */}
+
+        <article className="border-2 border-pink-500">
+          <section className="flex flex-col max-w-5xl w-full mx-auto border-4 border-pink-800 p-2 bg-pink-200">
+            <div className="flex flex-1 mb-2">
+
+              <div className="flex-1 bg-slate-200">
+                <div className="flex flex-col">
+                  <Image
+                    src='/next.svg'
+                    width="200"
+                    height="100"
+                    alt="logo" />
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, magni!</p>
+                  <p>Lorem, ipsum dolor.</p>
+                  <button>お問合せはこちら</button>
+                </div>
+              </div>
+              <div className="flex-1 bg-slate-300">
+                <Image
+                  src="https://image.tmdb.org/t/p/original/nLBRD7UPR6GjmWQp6ASAfCTaWKX.jpg"
+                  width="200"
+                  height="100"
+                  alt="logo"
+                />
+              </div>
+
+            </div>
+            <div className="flex flex-1 bg-amber-500 p-2">
+              <div className="flex w-full">
+                <div className="flex-1">
+                  <Image
+                    src="https://image.tmdb.org/t/p/original/nLBRD7UPR6GjmWQp6ASAfCTaWKX.jpg"
+                    width="200"
+                    height="100"
+                    alt="logo"
+                  />
+                </div>
+                <div className="flex-1">
+                  <div className="flex flex-col">
+                    <h2>About</h2>
+
+                    <div className="flex">
+                      <p><ruby data-ruby="アルチザン">ARTISAN<rt></rt></ruby>とは</p>
+                      <Image
+                        src="/vercel.svg"
+                        width="200"
+                        height="100"
+                        alt="logo"
+                      />
+                    </div>
+
+                    <p>BodyテキストBodyテキストBodyテキストBodyテキストBodyテキスト</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <article className="border-2 border-green-500">
+          <section className="max-w-5xl w-full mx-auto border-4 border-green-800">
+            sss
+          </section>
+        </article>
+
+
         {/* <MyComponent /> */}
-        <Results results={results}></Results>
 
       </main>
     </>
