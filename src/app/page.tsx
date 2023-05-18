@@ -5,6 +5,7 @@
 import { IResult } from '@/interface';
 import Results from '@/components/Results';
 
+export const dynamic='force-dynamic';
 const API_KEY = process.env.API_KEY
 
 export default async function Home({ searchParams } : {searchParams?: any}) {
