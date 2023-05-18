@@ -31,7 +31,7 @@ export default function RootLayout({
           {/* {Navbar} */}
           <Navbar />
 
-          <SearchBox />
+          {/* <SearchBox /> */}
 
           {children}
         </Providers>

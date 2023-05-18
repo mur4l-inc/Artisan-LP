@@ -34,7 +34,6 @@ export default async function Home({ searchParams } : {searchParams?: any}) {
     <>
     {/* min-h-screen  */}
       <main className="flex flex-col items-center justify-between p-4">
-        <h1>title</h1>
         {/* <Nav /> */}
         {/* <MyComponent /> */}
         <Results results={results}></Results>
