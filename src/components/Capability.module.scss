@@ -1,0 +1,76 @@
+.container {
+  padding: 0 100px;
+}
+
+.capability {
+  // background: #fff;
+  // margin-top: 96px;
+}
+
+.capability h2 {
+  font-size: 28px;
+  line-height: 1.425;
+  font-family: var(--font-jost);
+}
+
+@media (max-width: 639px) {
+  .capabilityItem {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .capabilityItem {
+    // max-width: 288px;
+  }
+  .capabilityItem > div {
+    flex: 1 1 100%;
+  }
+  .capabilityItem > div > div {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .capabilityItemText {
+    max-width: 100% !important;
+  }
+}
+
+
+.capabilityItemText {
+  max-width: 188px;
+}
+
+.capabilityImage {
+  width: 104px;
+  height: 104px;
+}
+
+// .aboutTitle {
+//   font-size: 28px;
+//   line-height: 1.425;
+//   font-weight: bold;
+//   font-family: var(--font-noto);
+//   color: #111;
+//   margin-top: 32px;
+//   // margin-bottom: 24px;
+// }
+
+// .aboutTitle ruby {
+//   letter-spacing: 1px;
+// }
+
+// .aboutTitle ruby::before {
+//   font-size: 12px;
+//   letter-spacing: 7px;
+// }
+
+// .aboutTitleImage {
+//   flex: 1 0 auto;
+//   display: flex;
+//   justify-content: flex-end;
+// }
+
+// .aboutContainer {
+//   padding: 52px 64px 52px 42px;
+// }

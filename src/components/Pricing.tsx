@@ -1,0 +1,128 @@
+'use client'
+import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
+import { notojp } from '@/app/fonts'
+import style from './Pricing.module.scss';
+
+export default function Pricing() {
+    const [planList, setPlanList] = useState<string[]>([])
+    const [parameterValue, setParameterValue] = useState<string>('');
+    const [parameterImageValue, setParameterImageValue] = useState<string>('');
+
+    useEffect(() => {
+      const fetchRemoteConfig = async (): Promise<void> => {
+        if (typeof window === 'undefined') {
+          return;
+        }
+
+        try {
+          const { remoteConfig } = await import('../utils/firebaseClient');
+          const { fetchAndActivate, getValue } = await import('firebase/remote-config');
+
+          // Set the minimum fetch interval to a desired value (in seconds)
+          remoteConfig.settings = {
+            minimumFetchIntervalMillis: 3600, // 1 hour
+            fetchTimeoutMillis: 3600
+          };
+
+          // Fetch the Remote Config values
+          await fetchAndActivate(remoteConfig);
+
+          // Get the Remote Config parameter value
+          const LightPlanPriceValue = getValue(remoteConfig, "LightPlanPrice").asString();
+          const MiddlePlanPriceValue = getValue(remoteConfig, "MiddlePlanPrice").asString();
+          const EnterPrisePlanPriceValue = getValue(remoteConfig, "EnterPrisePlanPrice").asString();
+
+          setPlanList([LightPlanPriceValue, MiddlePlanPriceValue, EnterPrisePlanPriceValue])
+
+
+          // Update the component state with the fetched value
+          // setParameterValue(value);
+
+          // setParameterImageValue(imageValue)
+
+        } catch (error) {
+          console.error("Error fetching remote config:", error);
+        }
+      };
+
+      fetchRemoteConfig();
+
+      console.log({ parameterValue })
+      console.log({ parameterImageValue })
+    }, []);
+
+  return (
+    <article className="border-2 border-blue-500 bg-ar-gray">
+      <section className={`flex flex-col max-w-5xl mt-16 mb-24 mx-auto border-4 border-pink-800 px-8 lg:px-0 ${style.pricing}`}>
+        <h2 className="text-ar-purple mb-8 sm:mb-6">Price</h2>
+        <h3 className="mb-6 md:mb-4 mt-4 md:mt-0 text-ar-regular text-2xl font-bold">ご利用料金</h3>
+        <p className="text-ar-regular text-base">BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBody</p>
+
+        <div className="flex flex-col md:flex-row justify-around my-12 gap-7">
+          <div className={`py-6 flex flex-col flex-1 items-center text-center space-y-4 bg-white rounded-xl ${style.card}`}>
+            <h3 className="text-lg font-semibold">Light Plan</h3>
+            <p className="!mt-0">Dev</p>
+            <p className="text-2xl text-ar-regular">
+              {planList[0] ??
+                <Image
+                  src="loading.svg"
+                  width="50"
+                  height="50"
+                  alt="loading"
+                  className={`mx-auto`}
+                />
+              }
+            </p>
+            <div className="w-full px-2">
+              <hr className="w-full" />
+            </div>
+            <p className="text-sm text-left text-gray-600">BodyテキストBodyテキスト</p>
+          </div>
+
+          <div className={`py-6 flex flex-col flex-1 items-center text-center space-y-4 bg-white rounded-xl ${style.card}`}>
+            <h3 className="text-lg font-semibold">Middle Plan</h3>
+            <p className="!mt-0">＋3D ＋High level</p>
+            <p className="text-2xl text-ar-regular">
+              {planList[1] ??
+                <Image
+                  src="loading.svg"
+                  width="50"
+                  height="50"
+                  alt="loading"
+                  className={`mx-auto`}
+                />
+              }
+            </p>
+            <div className="w-full px-2">
+              <hr className="w-full" />
+            </div>
+            <p className="text-sm text-left text-gray-600">BodyテキストBodyテキスト</p>
+          </div>
+
+          <div className={`py-6 flex flex-col flex-1 items-center text-center space-y-4 bg-white rounded-xl ${style.card}`}>
+            <h3 className="text-lg font-semibold">Enterprise Plan</h3>
+            <p className="!mt-0">＋3D ＋High level +PR</p>
+            <p className="text-2xl text-ar-regular">
+              {planList[2] ??
+                <Image
+                  src="loading.svg"
+                  width="50"
+                  height="50"
+                  alt="loading"
+                  className={`mx-auto`}
+                />
+              }
+            </p>
+            <div className="w-full px-2">
+              <hr className="w-full" />
+            </div>
+            <p className="text-sm text-left text-gray-600">BodyテキストBodyテキスト</p>
+          </div>
+
+        </div>
+
+      </section>
+    </article>
+  )
+}

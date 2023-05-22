@@ -19,6 +19,8 @@
 body {
   color: rgb(var(--foreground-rgb));
 
+  font-family: var(--font-noto), var(--font-jost), var(--font-notojp), sans-serif;
+
   /*
   background: linear-gradient(
       to bottom,
@@ -42,10 +44,96 @@ ruby[data-ruby] {
 }
 ruby[data-ruby]::before {
   content: attr(data-ruby);
-  position:absolute;
-  left:-2em;
-  top:-1em;
-  right:-2em;
-  text-align:center;
-  font-size:.6em;
+  position: absolute;
+  left: -2em;
+  top: -1.5em;
+  right: -2em;
+  text-align: center;
+  font-size: .6em;
+  letter-spacing: 7px;
+}
+
+
+
+.ios-frame {
+/*  background: url('../../public/iosFrame.png');
+  background-size: 200px 355px;
+  width: 200px;
+  height: 355px;
+
+  border-radius: 50px;
+  overflow: hidden;*/
+  width: 210px;
+  /* height: 355px; */
+  height: 405px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ios-frame-inner {
+  border-radius: 40px;
+  overflow: hidden;
+  width: 205px;
+  /* border: 1px solid red; */
+  height: 400px;
+  display: block;
+  position: relative;
+  left: 3px;
+
+  background: url('../../public/iosFrame.png');
+  background-position: center;
+  background-size: 210px 405px;
+  /* width: 210px;
+  height: 405px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* .ios-frame-inner::before {
+  content: "";
+  display: block;
+  background: url('../../public/iosFrame.png');
+  background-position: center;
+  background-size: 210px 405px;
+  width: 210px;
+  height: 405px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 10;
+} */
+
+
+.video-in-frame {
+    /* You will need to adjust the width and height values and position to fit the video inside your frame. */
+    position: absolute;
+    top: 0px;
+    /* left: 5px; */
+    left: 3px;
+    left: /* Adjust this value */;
+    width: 220px;
+    /* height: 355px; */
+    height: 405px;
+    border-radius: 50px;
+    overflow: hidden;
+    transform: scale(1.2);
+}
+
+.ios-frame::before {
+  content: "";
+  display: block;
+  background: url('../../public/iosFrame.png');
+  background-position: center;
+  background-size: 210px 405px;
+  width: 210px;
+  height: 405px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 30;
 }

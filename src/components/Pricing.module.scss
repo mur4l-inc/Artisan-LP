@@ -1,0 +1,25 @@
+.container {
+  padding: 0 100px;
+}
+
+.pricing {
+  // background: #fff;
+  // margin-top: 96px;
+}
+
+.pricing h2 {
+  font-size: 28px;
+  line-height: 1.425;
+  font-family: var(--font-jost);
+}
+
+.card {
+  border: 1px solid rgba(17, 17, 17, 0.2);
+}
+
+.card h3 {
+  font-size: 28px;
+  line-height: 1.425;
+  font-family: var(--font-jost);
+  color: #111;
+}
