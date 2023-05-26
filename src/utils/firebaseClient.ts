@@ -17,9 +17,4 @@ if (getApps().length === 0) {
 const app = getApp();
 const remoteConfig: RemoteConfig = getRemoteConfig(app);
 
-// Set default values for Remote Config parameters
-remoteConfig.defaultConfig = {
-  "test": "default_value",
-};
-
 export { remoteConfig };

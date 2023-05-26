@@ -1,15 +1,22 @@
-import React from 'react'
-import Image from 'next/image'
-import { notojp } from '@/app/fonts'
-import style from './Capability.module.scss';
+import React from "react";
+import Image from "next/image";
+import { notojp } from "@/app/fonts";
+import style from "./Capability.module.scss";
 
 export default function Capability() {
   return (
-    <article className="border-2 border-blue-500 bg-purple-100">
-      <section className={`flex flex-col max-w-5xl mt-16 mb-24 mx-auto border-4 border-pink-800 px-8 lg:px-0 ${style.capability}`}>
+    <article className="pt-16 pb-24 bg-gray-800">
+      <section
+        id="capabilities"
+        className={`flex flex-col max-w-5xl mx-auto px-8 lg:px-0 ${style.capability}`}
+      >
         <h2 className="text-ar-purple mb-8 sm:mb-6">What you can do</h2>
-        <h3 className="mb-6 md:mb-4 mt-4 md:mt-0 text-white text-2xl font-bold">ARでこんなことが可能です</h3>
-        <p className="text-white text-base">BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBody</p>
+        <h3 className="mb-6 md:mb-4 mt-4 md:mt-0 text-white text-2xl font-bold">
+          ARでこんなことが可能です
+        </h3>
+        <p className="text-white text-base">
+          BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBody
+        </p>
 
         <div className={`flex mt-12 ${style.capabilityItem}`}>
           <div className="flex ">
@@ -24,7 +31,9 @@ export default function Capability() {
               />
             </div>
             <div className={`${style.capabilityItemText}`}>
-              <p className="my-3 mx-4 text-white text-base">BodyテキストBodyテキストBody テキストBody</p>
+              <p className="my-3 mx-4 text-white text-base">
+                BodyテキストBodyテキストBody テキストBody
+              </p>
             </div>
           </div>
 
@@ -39,11 +48,12 @@ export default function Capability() {
               />
             </div>
             <div className={`${style.capabilityItemText}`}>
-              <p className="my-3 mx-4 text-white text-base">BodyテキストBodyテキストBody テキストBody</p>
+              <p className="my-3 mx-4 text-white text-base">
+                BodyテキストBodyテキストBody テキストBody
+              </p>
             </div>
           </div>
         </div>
-
 
         <div className={`flex mt-4 ${style.capabilityItem}`}>
           <div className="flex ">
@@ -57,7 +67,9 @@ export default function Capability() {
               />
             </div>
             <div className={`${style.capabilityItemText}`}>
-              <p className="my-3 mx-4 text-white text-base">BodyテキストBodyテキストBody テキストBody</p>
+              <p className="my-3 mx-4 text-white text-base">
+                BodyテキストBodyテキストBody テキストBody
+              </p>
             </div>
           </div>
 
@@ -72,12 +84,13 @@ export default function Capability() {
               />
             </div>
             <div className={`${style.capabilityItemText}`}>
-              <p className="my-3 mx-4 text-white text-base">BodyテキストBodyテキストBody テキストBody</p>
+              <p className="my-3 mx-4 text-white text-base">
+                BodyテキストBodyテキストBody テキストBody
+              </p>
             </div>
           </div>
         </div>
-
       </section>
     </article>
-  )
+  );
 }
