@@ -8,7 +8,7 @@ export default function Hero() {
     <article className="bg-black">
       <section className="flex flex-col max-w-5xl mx-auto">
         <div
-          className={`flex flex-1 flex-col md:flex-row mt-28 sm:mt-16 !px-8 ${style.container}`}
+          className={`flex flex-1 flex-col md:flex-row md:mt-28 mt-16 !px-8 ${style.container}`}
         >
           <div className="flex-1 flex-grow-0 flex-shrink basis-80">
             <div className="flex flex-col items-center">
@@ -20,7 +20,7 @@ export default function Hero() {
                 alt="logo"
               />
               <p
-                className={`${notojp.variable} text-heroTag font-bold text-white text-center mb-8 sm:order-3 sm:mt-6`}
+                className={`${notojp.variable} text-heroTag font-bold text-white text-center mb-8 mt-8 order-3`}
               >
                 InstagramのAR制作
                 <br />
@@ -35,17 +35,19 @@ export default function Hero() {
                       autoPlay
                       muted
                       loop
+                      playsInline
                     >
-                      {/* <source src="./movie_1.webm" type="video/webm" /> */}
+                      <source src="./movie_1.webm" type="video/webm" />
+                      <source src="./movie_1.mp4" type="video/mp4" />
                     </video>
                   </div>
                 </div>
               </div>
 
-              <p className="text-white mb-9 sm:order-4">
+              <p className="text-white mb-9 order-4">
                 BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキスト
               </p>
-              <button className="rounded-full bg-white text-ar-navy font-bold px-8 py-4 sm:order-5">
+              <button className="rounded-full bg-white text-ar-navy font-bold px-8 py-4 order-5">
                 お問合せはこちら
               </button>
             </div>
@@ -62,6 +64,7 @@ export default function Hero() {
                   loop
                 >
                   <source src="./movie_1.webm" type="video/webm" />
+                  <source src="./movie_1.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>

@@ -20,7 +20,6 @@
   font-family: var(--font-noto);
   color: #111;
   margin-top: 32px;
-  // margin-bottom: 24px;
 }
 
 .aboutTitle ruby {
@@ -38,6 +37,10 @@
   justify-content: flex-end;
 }
 
+// .aboutContainer {
+//   padding: 52px 64px 52px 64px;
+// }
+
 .aboutContainer {
-  padding: 52px 64px 52px 42px;
+  padding: 52px 32px 52px 32px;
 }

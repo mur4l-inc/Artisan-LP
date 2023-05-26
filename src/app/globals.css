@@ -21,15 +21,7 @@ body {
 
   font-family: var(--font-noto), var(--font-jost), var(--font-notojp),
     sans-serif;
-
-  /*
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  */
+  font-smoothing: antialiased;
 }
 
 html {

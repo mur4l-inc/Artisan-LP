@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import styled, { css } from "styled-components";
-import NavbarItem from "./NavbarItem";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import dynamic from "next/dynamic";
