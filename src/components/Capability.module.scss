@@ -36,14 +36,15 @@
   }
 }
 
-
 .capabilityItemText {
-  max-width: 188px;
+  // max-width: 188px;
+  max-width: 260px;
+  align-self: center;
 }
 
 .capabilityImage {
-  width: 104px;
-  height: 104px;
+  width: 160px;
+  height: 160px;
 }
 
 // .aboutTitle {

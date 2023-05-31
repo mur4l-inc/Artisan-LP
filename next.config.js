@@ -8,8 +8,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        // hostname: "**",
-        hostname: "image.tmdb.org",
+        hostname: "**",
+        // hostname: "image.tmdb.org",
       },
     ],
     unoptimized: true

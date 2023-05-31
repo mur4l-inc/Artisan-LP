@@ -12,9 +12,15 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'first-pc': "url('/bg_first.webp')",
+        'first-sp': "url('/bg_first_sp.webp')",
+        'second-pc': "url('/bg_second.webp')",
+        'second-sp': "url('/bg_second_sp.webp')",
+        'about-pc': "url('/about_pc.webp')",
+        'about-sp': "url('/about_sp.webp')",
       },
       fontFamily: {
-        sans: ['var(--font-notojp)', 'var(--font-noto)', 'var(--font-jost)' , ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-notojp)', 'var(--font-noto)', 'var(--font-jost)', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         heroTag: ['28px', 1.4285],
@@ -23,9 +29,10 @@ module.exports = {
         'ar': {
           regular: '#111111',
           navy: '#000F44',
-          purple: '#6177EF',
+          purple: '#8094FF',
           campaign: '#4756A8',
           gray: '#F6F4F1',
+          lightblue: '#B1F1FF',
         }
       },
     },

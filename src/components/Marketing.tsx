@@ -8,9 +8,11 @@ export default function Marketing() {
     <article className="bg-white pt-16 pb-24">
       <section
         id="marketing"
-        className={`flex flex-col max-w-5xl mx-auto px-8 lg:px-0 ${style.marketing}`}
+        className={`flex flex-col max-w-5xl mx-auto lg:px-0 ${style.marketing}  w-[calc(100%-64px)] lg:w-[calc(100%-128px)]`}
       >
-        <h2 className="text-ar-purple mb-8 sm:mb-6">Marketing & PR</h2>
+        <h2 className="text-ar-purple mb-8 sm:mb-6 font-semibold">
+          Marketing & PR
+        </h2>
         <h3 className="mb-6 md:mb-4 mt-4 md:mt-0 text-ar-regular text-2xl font-bold">
           マーケティング効果
         </h3>
@@ -24,7 +26,7 @@ export default function Marketing() {
               src="/engagement.svg"
               width="59"
               height="53"
-              alt="Artisanとは"
+              alt="エンゲージメント"
               className={`${style.capabilityImage}`}
             />
             <h3 className="text-lg font-semibold">エンゲージメント</h3>
@@ -39,7 +41,7 @@ export default function Marketing() {
               src="/sns.svg"
               width="59"
               height="53"
-              alt="Artisanとは"
+              alt="SNSコミュニケーション創出"
               className={`${style.capabilityImage}`}
             />
             <h3 className="text-lg font-semibold">SNSコミュニケーション創出</h3>
@@ -54,7 +56,7 @@ export default function Marketing() {
               src="/brand.svg"
               width="59"
               height="53"
-              alt="Artisanとは"
+              alt="ブランド認知"
               className={`${style.capabilityImage}`}
             />
             <h3 className="text-lg font-semibold">ブランド認知</h3>
@@ -69,7 +71,7 @@ export default function Marketing() {
       <hr className="max-w-5xl mx-auto" />
 
       <section
-        className={`flex flex-col max-w-5xl mt-16 mx-auto px-8 lg:px-0 ${style.marketing}`}
+        className={`flex flex-col max-w-5xl mt-16 mx-auto lg:px-0 ${style.marketing} w-[calc(100%-64px)] lg:w-[calc(100%-128px)]`}
       >
         <h3 className="mb-6 md:mb-4 mt-4 md:mt-0 text-ar-regular text-2xl font-bold">
           ARとPRで魅力を最大限に引き出す
@@ -84,7 +86,7 @@ export default function Marketing() {
             className={`flex flex-col flex-1 items-center text-left bg-ar-campaign ${style.marketingItem}`}
           >
             <Image
-              src="/ar_pr1.png"
+              src="/ar_pr1.webp"
               width="272"
               height="181"
               alt="キャンペーン"
@@ -106,7 +108,7 @@ export default function Marketing() {
             className={`flex flex-col flex-1 items-center text-left bg-ar-campaign ${style.marketingItem}`}
           >
             <Image
-              src="/ar_pr2.png"
+              src="/ar_pr2.webp"
               width="272"
               height="181"
               alt="インフルエンサー"
@@ -127,7 +129,7 @@ export default function Marketing() {
             className={`flex flex-col flex-1 items-center text-left bg-ar-campaign ${style.marketingItem}`}
           >
             <Image
-              src="/ar_pr3.png"
+              src="/ar_pr3.webp"
               width="272"
               height="181"
               alt="オフライン"

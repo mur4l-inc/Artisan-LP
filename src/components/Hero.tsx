@@ -5,8 +5,8 @@ import style from "./Hero.module.scss";
 
 export default function Hero() {
   return (
-    <article className="bg-black">
-      <section className="flex flex-col max-w-5xl mx-auto">
+    <article className="bg-black bg-first-sp md:bg-first-pc bg-cover bg-right-top">
+      <section className="flex flex-col max-w-5xl mx-auto w-[calc(100%-64px)] lg:w-[calc(100%-128px)]">
         <div
           className={`flex flex-1 flex-col md:flex-row md:mt-28 mt-16 !px-8 ${style.container}`}
         >
@@ -47,9 +47,13 @@ export default function Hero() {
               <p className="text-white mb-9 order-4">
                 BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキスト
               </p>
-              <button className="rounded-full bg-white text-ar-navy font-bold px-8 py-4 order-5">
+              <a
+                href="#inquiry"
+                className="rounded-full bg-white text-ar-navy font-bold px-8 py-4 order-5 hover:bg-ar-lightblue"
+              >
+                {/* transition-all ease-in-out duration-300 */}
                 お問合せはこちら
-              </button>
+              </a>
             </div>
           </div>
 
@@ -73,29 +77,25 @@ export default function Hero() {
 
         <div id="about" className={`flex flex-1 mb-0 md:mb-16 ${style.about}`}>
           <div className="flex w-full">
-            <div className="flex-1 hidden md:block">
-              <Image
-                src="/about.png"
-                width="416"
-                height="360"
-                alt="Artisanとは"
-                className="hidden md:block object-cover h-full"
-              />
-            </div>
+            <div className="flex-1 hidden md:block bg-about-pc lg:bg-contain bg-cover bg-center bg-no-repeat"></div>
             <div className="flex-1">
               <div
-                className={`flex flex-col !pb-24 md:!pb-14 ${style.aboutContainer}`}
+                // className={`flex flex-col !pb-24 md:!pb-14 ${style.aboutContainer}`}
+                className={`flex flex-col ${style.aboutContainer}`}
               >
-                <h2 className="text-ar-purple mb-8 md:mb-4">About</h2>
+                <h2 className="text-ar-purple font-semibold mb-8 md:mb-4">
+                  About
+                </h2>
 
-                <Image
-                  src="/about.png"
-                  width="416"
-                  height="360"
-                  alt="Artisanとは"
-                  className="block md:hidden mx-auto mt-12 mb-8 sm:mt-0"
-                />
-
+                <div className="-mx-8 md:mx-0">
+                  <Image
+                    src="/about_sp.webp"
+                    width="416"
+                    height="360"
+                    alt="Artisanとは"
+                    className="block md:hidden mx-auto mt-0 md:mt-12 mb-8 sm:mt-0 w-full"
+                  />
+                </div>
                 <div className="flex mb-6">
                   <p className={`${style.aboutTitle}`}>
                     <ruby data-ruby="アルチザン">

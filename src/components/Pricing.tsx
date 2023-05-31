@@ -60,9 +60,9 @@ export default function Pricing() {
     <article className="bg-ar-gray pt-16 pb-24">
       <section
         id="price"
-        className={`flex flex-col max-w-5xl mx-auto px-8 lg:px-0 ${style.pricing}`}
+        className={`flex flex-col max-w-5xl mx-auto lg:px-0 ${style.pricing} w-[calc(100%-64px)] lg:w-[calc(100%-128px)]`}
       >
-        <h2 className="text-ar-purple mb-8 sm:mb-6">Price</h2>
+        <h2 className="text-ar-purple mb-8 sm:mb-6 font-semibold">Price</h2>
         <h3 className="mb-6 md:mb-4 mt-4 md:mt-0 text-ar-regular text-2xl font-bold">
           ご利用料金
         </h3>
@@ -82,7 +82,7 @@ export default function Pricing() {
               className={`mx-auto`}
             />
             <h3 className="text-lg font-semibold">Light Plan</h3>
-            <p className="!mt-0">Dev</p>
+            <p className="!mt-0 text-sm text-ar-regular">Dev</p>
             <p className="text-2xl text-ar-regular">
               {isError ? (
                 <p className="text-sm text-gray-400 px-2">
@@ -123,7 +123,7 @@ export default function Pricing() {
               className={`mx-auto`}
             />
             <h3 className="text-lg font-semibold">Middle Plan</h3>
-            <p className="!mt-0">＋3D ＋High level</p>
+            <p className="!mt-0 text-sm text-ar-regular">＋3D ＋High level</p>
             <p className="text-2xl text-ar-regular">
               {isError ? (
                 <p className="text-sm text-gray-400 px-2">
@@ -164,7 +164,9 @@ export default function Pricing() {
               className={`mx-auto`}
             />
             <h3 className="text-lg font-semibold">Enterprise Plan</h3>
-            <p className="!mt-0">＋3D ＋High level +PR</p>
+            <p className="!mt-0 text-sm text-ar-regular">
+              ＋3D ＋High level +PR
+            </p>
             <p className="text-2xl text-ar-regular">
               {isError ? (
                 <p className="text-sm text-gray-400 px-2">

@@ -28,7 +28,7 @@
   display: block;
   width: 26px;
   height: 26px;
-  background: url('/faq.svg');
+  background: url("/faq.svg");
   background-size: 26px;
   // border: 1px solid rgba(17, 17, 17, 0.2);
   position: relative;
@@ -39,4 +39,32 @@
   line-height: 1.425;
   font-family: var(--font-jost);
   color: #111;
+}
+
+@media (max-width: 768px) {
+  .faqItem::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000f44;
+    border-right: 2px solid #000f44;
+    transform: rotate(-225deg);
+  }
+
+  .isOpen::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 36px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000f44;
+    border-right: 2px solid #000f44;
+    transform: rotate(-45deg);
+  }
 }

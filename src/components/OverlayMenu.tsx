@@ -4,8 +4,11 @@ import style from "./Navbar.module.scss";
 export default function OverlayMenu({ isOpen, handleClick }: any) {
   return (
     <div
-      className={`${style.navBar} ${
-        isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
+      // className={`${style.navBar} ${
+      //   isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
+      // } fixed flex justify-center inset-0 z-40 bg-ar-navy space-y-4 overflow-y-auto transition-all duration-500 ease-in-out transform`}
+      className={`right-0 ${style.navBar} ${
+        isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
       } fixed flex justify-center inset-0 z-40 bg-ar-navy space-y-4 overflow-y-auto transition-all duration-500 ease-in-out transform`}
     >
       <nav className="flex flex-col items-center justify-center py-16">
@@ -37,7 +40,11 @@ export default function OverlayMenu({ isOpen, handleClick }: any) {
           <p className={`text-base`}>FAQ</p>
           <p className={`font-bold`}>よくあるご質問</p>
         </a>
-        <a href="#" className="bg-white py-2 px-4 rounded-full">
+        <a
+          href="#inquiry"
+          onClick={handleClick}
+          className="bg-white py-2 px-4 rounded-full hover:bg-ar-lightblue"
+        >
           お問合せはこちら
         </a>
       </nav>

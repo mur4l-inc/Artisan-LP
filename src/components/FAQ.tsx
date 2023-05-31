@@ -2,14 +2,16 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { notojp } from "@/app/fonts";
-import style from "./FAQ.module.scss";
+import style from "./Faq.module.scss";
+import { FaqItem } from "./FaqItem";
 
 interface faq {
   question: string;
   answer: string;
+  isOpen: boolean;
 }
 
-export default function Pricing() {
+export default function Faq() {
   const [faqList, setFaqList] = useState<faq[]>([]);
   const [isError, setError] = useState<boolean>(false);
 
@@ -52,18 +54,22 @@ export default function Pricing() {
           {
             question: Question_1,
             answer: Answer_1,
+            isOpen: false,
           },
           {
             question: Question_2,
             answer: Answer_2,
+            isOpen: false,
           },
           {
             question: Question_3,
             answer: Answer_3,
+            isOpen: false,
           },
           {
             question: Question_4,
             answer: Answer_4,
+            isOpen: false,
           },
         ]);
       } catch (error) {
@@ -79,9 +85,9 @@ export default function Pricing() {
     <article className="bg-white">
       <section
         id="faq"
-        className={`flex flex-col max-w-5xl mt-16 mb-24 mx-auto px-8 lg:px-0 ${style.faq}`}
+        className={`flex flex-col max-w-5xl mt-16 mb-24 mx-auto lg:px-0 ${style.faq}  w-[calc(100%-64px)] lg:w-[calc(100%-128px)]`}
       >
-        <h2 className="text-ar-purple mb-8 sm:mb-6">FAQ</h2>
+        <h2 className="text-ar-purple mb-8 sm:mb-6 font-semibold">FAQ</h2>
         <h3 className="mb-6 md:mb-4 mt-4 md:mt-0 text-ar-regular text-2xl font-bold">
           よくある質問
         </h3>
@@ -99,18 +105,30 @@ export default function Pricing() {
               </i>
             </p>
           ) : faqList.length > 0 ? (
-            faqList.map((faq: faq) => (
-              <div
+            // faqList.map((faq: faq, index) => (
+            //   <div
+            //     key={faq.question}
+            //     className={`p-6 flex flex-col flex-1 items-center text-left space-y-4 bg-ar-gray rounded-xl ${style.faqCard}`}
+            //   >
+            //     <dl>
+            //       <dt
+            //         className="text-lg font-semibold text-ar-regular mb-4"
+            //         onClick={(e) => {
+
+            //         }}
+            //       >
+            //         {faq.question}
+            //       </dt>
+            //       <dd className="text-ar-regular text-base">{faq.answer}</dd>
+            //     </dl>
+            //   </div>
+            // ))
+            faqList.map((faq: faq, index) => (
+              <FaqItem
                 key={faq.question}
-                className={`p-6 flex flex-col flex-1 items-center text-left space-y-4 bg-ar-gray rounded-xl ${style.faqCard}`}
-              >
-                <dl>
-                  <dt className="text-lg font-semibold text-ar-regular mb-4">
-                    {faq.question}
-                  </dt>
-                  <dd className="text-ar-regular text-base">{faq.answer}</dd>
-                </dl>
-              </div>
+                question={faq.question}
+                answer={faq.answer}
+              />
             ))
           ) : (
             <Image
