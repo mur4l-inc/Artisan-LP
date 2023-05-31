@@ -29,7 +29,7 @@ html {
 }
 
 #about {
-  scroll-margin-top: 0;
+  scroll-margin-top: -2px;
 }
 
 #inquiry,
@@ -37,7 +37,7 @@ html {
 #marketing,
 #faq,
 #price {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 3.8rem;
 }
 
 html::-webkit-scrollbar {

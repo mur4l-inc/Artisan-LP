@@ -8,7 +8,7 @@ export default function Hero() {
     <article className="bg-black bg-first-sp md:bg-first-pc bg-cover bg-right-top">
       <section className="flex flex-col max-w-5xl mx-auto w-[calc(100%-64px)] lg:w-[calc(100%-128px)]">
         <div
-          className={`flex flex-1 flex-col md:flex-row md:mt-28 mt-16 !px-8 ${style.container}`}
+          className={`flex flex-1 flex-col md:flex-row md:mt-28 mt-16 !px-0 md:!px-8 ${style.container}`}
         >
           <div className="flex-1 flex-grow-0 flex-shrink basis-80">
             <div className="flex flex-col items-center">
@@ -75,7 +75,10 @@ export default function Hero() {
           </div>
         </div>
 
-        <div id="about" className={`flex flex-1 mb-0 md:mb-16 ${style.about}`}>
+        <div
+          id="about"
+          className={`flex flex-1 -mx-8 md:mx-0 md:mt-0 mb-0 md:mb-16 ${style.about}`}
+        >
           <div className="flex w-full">
             <div className="flex-1 hidden md:block bg-about-pc lg:bg-contain bg-cover bg-center bg-no-repeat"></div>
             <div className="flex-1">
