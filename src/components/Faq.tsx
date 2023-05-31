@@ -11,7 +11,7 @@ interface faq {
   isOpen: boolean;
 }
 
-export default function Faq() {
+export default function FAQ() {
   const [faqList, setFaqList] = useState<faq[]>([]);
   const [isError, setError] = useState<boolean>(false);
 
