@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { notojp } from "@/app/fonts";
-import style from "./FAQ.module.scss";
+import style from "./Faq.module.scss";
 import { FaqItem } from "./FaqItem";
 
 interface faq {
@@ -11,7 +11,7 @@ interface faq {
   isOpen: boolean;
 }
 
-export default function FAQ() {
+export default function Faq() {
   const [faqList, setFaqList] = useState<faq[]>([]);
   const [isError, setError] = useState<boolean>(false);
 
