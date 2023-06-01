@@ -26,13 +26,14 @@ export const FaqItem: FC<Props> = ({ question, answer }) => {
 
   return (
     <div
-      className={`p-6 flex flex-col flex-1 items-center text-left space-y-4 bg-ar-gray rounded-xl ${style.faqCard}`}
+      className={`p-6 flex flex-col flex-1 items-start text-left space-y-4 bg-ar-gray rounded-xl ${style.faqCard}`}
     >
-      <dl>
+      <dl className="">
         <dt
           className={`text-lg font-semibold text-ar-regular mb-4 md:cursor-auto cursor-pointer pr-8 md:pr-0 ${
             style.faqItem
-          } ${isOpen ? style.isOpen : ""}`}
+          } ${!isOpen && isSmallScreen ? "!mb-0" : style.isOpen}
+          `}
           onClick={handleClick}
         >
           {question}

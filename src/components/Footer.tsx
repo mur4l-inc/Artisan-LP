@@ -1,15 +1,16 @@
-// "use client";
-import React, { useEffect, useState } from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { jost, notojp } from "@/app/fonts";
 import style from "./Footer.module.scss";
 
 export default function Footer() {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
   return (
     <article className="py-24 bg-ar-navy">
       <section
         id="inquiry"
-        className={`max-w-5xl mx-auto lg:px-0 ${style.faq} w-[calc(100%-64px)] lg:w-[calc(100%-128px)]`}
+        className={`max-w-5xl mx-auto lg:px-0 ${style.contact} w-[calc(100%-64px)] lg:w-[calc(100%-128px)]`}
       >
         <h2
           className={`mb-8 sm:mb-6 text-white text-center text-3xl ${style.jost}`}
@@ -29,18 +30,35 @@ export default function Footer() {
         </div> */}
         <div className="flex justify-center">
           <iframe
+            ref={iframeRef}
             src="https://docs.google.com/forms/d/e/1FAIpQLSc3uQL6mpKZmctjAfqypVeHLw4sZH9nzMMw1wf2bbfXLjpcOA/viewform?embedded=true"
             width="640"
-            height="2105"
-            frame-border="0"
-            margin-height="0"
-            margin-width="0"
+            style={{ minHeight: "1155px" }}
+            className="hidden sm:hidden md:block" // visible on md and up
+          >
+            読み込んでいます…
+          </iframe>
+          <iframe
+            ref={iframeRef}
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc3uQL6mpKZmctjAfqypVeHLw4sZH9nzMMw1wf2bbfXLjpcOA/viewform?embedded=true"
+            width="640"
+            style={{ minHeight: "1265px" }}
+            className="hidden sm:block md:hidden" // visible only on sm
+          >
+            読み込んでいます…
+          </iframe>
+          <iframe
+            ref={iframeRef}
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc3uQL6mpKZmctjAfqypVeHLw4sZH9nzMMw1wf2bbfXLjpcOA/viewform?embedded=true"
+            width="640"
+            style={{ minHeight: "1365px" }}
+            className="block sm:hidden" // visible only on xs
           >
             読み込んでいます…
           </iframe>
         </div>
 
-        <a href="" className="block mt-16">
+        <a href="https://mur4l.com/" className="block mt-16">
           <Image
             src="/muralLogo.svg"
             width="120"

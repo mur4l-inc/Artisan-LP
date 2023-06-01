@@ -17,7 +17,7 @@ export default function Capability() {
           ARでこんなことが可能です
         </h3>
         <p className="text-white text-base">
-          BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBody
+          認識と表現を組み合わせたフィルターで、体験を作ることができます。
         </p>
 
         <div

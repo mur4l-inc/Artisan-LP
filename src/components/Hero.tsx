@@ -45,7 +45,7 @@ export default function Hero() {
               </div>
 
               <p className="text-white mb-9 order-4">
-                BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキスト
+                Make Wow! AR promotion and marketing by Mural
               </p>
               <a
                 href="#inquiry"
@@ -117,7 +117,9 @@ export default function Hero() {
                 </div>
 
                 <p className="text-ar-regular">
-                  BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBody
+                  Artisanは、企業向けのInstagram
+                  ARを活かしたマーケティングソリューションです。独自のエフェクトやフィルターを開発し、お客様のブランドとターゲット層に最適化されたコンテンツを提供します。効果的なinstagram
+                  ARマーケティングで、ブランドの認知度を向上させましょう。
                 </p>
               </div>
             </div>

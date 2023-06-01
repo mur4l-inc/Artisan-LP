@@ -88,6 +88,7 @@ ruby[data-ruby]::before {
   background: url("../../public/iosFrame.png");
   background-position: center;
   background-size: 210px 405px;
+  background-color: #000;
   position: absolute;
   top: 0;
   left: 6px;

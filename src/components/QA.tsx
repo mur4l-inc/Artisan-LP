@@ -49,6 +49,12 @@ export default function QA() {
         const Answer_3 = getValue(remoteConfig, "Answer_3").asString();
         const Question_4 = getValue(remoteConfig, "Question_4").asString();
         const Answer_4 = getValue(remoteConfig, "Answer_4").asString();
+        const Question_5 = getValue(remoteConfig, "Question_5").asString();
+        const Answer_5 = getValue(remoteConfig, "Answer_5").asString();
+        const Question_6 = getValue(remoteConfig, "Question_6").asString();
+        const Answer_6 = getValue(remoteConfig, "Answer_6").asString();
+        const Question_7 = getValue(remoteConfig, "Question_7").asString();
+        const Answer_7 = getValue(remoteConfig, "Answer_7").asString();
 
         setFaqList([
           {
@@ -69,6 +75,21 @@ export default function QA() {
           {
             question: Question_4,
             answer: Answer_4,
+            isOpen: false,
+          },
+          {
+            question: Question_5,
+            answer: Answer_5,
+            isOpen: false,
+          },
+          {
+            question: Question_6,
+            answer: Answer_6,
+            isOpen: false,
+          },
+          {
+            question: Question_7,
+            answer: Answer_7,
             isOpen: false,
           },
         ]);
@@ -95,7 +116,7 @@ export default function QA() {
           BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBody
         </p>
 
-        <div className="flex flex-col md:flex-row justify-around mt-12 gap-6 flex-wrap">
+        <div className="flex flex-col md:flex-row justify-start mt-12 gap-6 flex-wrap">
           {isError ? (
             <p className="text-sm text-gray-400 px-2">
               <i>
