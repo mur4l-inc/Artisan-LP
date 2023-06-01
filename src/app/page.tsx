@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Capability from "@/components/Capability";
 import Marketing from "@/components/Marketing";
 import Pricing from "@/components/Pricing";
-import Faq from "@/components/Faq";
+import QA from "@/components/QA";
 import Footer from "@/components/Footer";
 
 const API_KEY = process.env.API_KEY;
@@ -22,7 +22,7 @@ export default async function Home() {
 
         <Pricing />
 
-        <Faq />
+        <QA />
 
         <Footer />
       </main>
