@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import style from "./Faq.module.scss";
+import style from "./QA.module.scss";
 
 type Props = {
   question: string;
