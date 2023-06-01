@@ -51,7 +51,7 @@ export default function Footer() {
             ref={iframeRef}
             src="https://docs.google.com/forms/d/e/1FAIpQLSc3uQL6mpKZmctjAfqypVeHLw4sZH9nzMMw1wf2bbfXLjpcOA/viewform?embedded=true"
             width="640"
-            style={{ minHeight: "1365px" }}
+            style={{ minHeight: "1405px" }}
             className="block sm:hidden" // visible only on xs
           >
             読み込んでいます…
