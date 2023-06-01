@@ -18,7 +18,9 @@ export default function Footer() {
           Let us help you
         </h2>
         <p className="text-base text-white text-center">
-          BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBody
+          お問い合わせは無料です。お気軽にお問い合わせください。
+          <br />
+          *法人・個人ともにご相談を受け付けています。
         </p>
         {/* <div className="flex justify-center">
           <a

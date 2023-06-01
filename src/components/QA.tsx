@@ -113,7 +113,10 @@ export default function QA() {
           よくある質問
         </h3>
         <p className="text-ar-regular text-base">
-          BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBody
+          Instagram AR上で出来ることであれば、なんでも対応可能です。
+          「何ができるかわからない…」 の段階でもお気軽にご相談ください。
+          <br />
+          ワンストップで課題解決に取り組む会社ですので、各フェーズでの取り組みについてお客様と並走しながら解決いたします。
         </p>
 
         <div className="flex flex-col md:flex-row justify-start mt-12 gap-6 flex-wrap">
