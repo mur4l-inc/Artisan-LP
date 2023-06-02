@@ -27,7 +27,7 @@ export default function Hero() {
                 ならARTISAN
               </p>
               <div className="flex-1 md:hidden">
-                <div className="ios-frame">
+                <div className="ios-frame ios-frame-sp">
                   <div className="ios-frame-inner">
                     <video
                       className="video-in-frame"
@@ -44,12 +44,14 @@ export default function Hero() {
                 </div>
               </div>
 
-              <p className="text-white mb-9 order-4">
-                Make Wow! AR promotion and marketing by Mural
+              <p className="text-white mb-9 order-4 text-center">
+                Make Wow!
+                <br />
+                AR promotion and marketing by Mural
               </p>
               <a
                 href="#inquiry"
-                className="rounded-full bg-white text-ar-navy font-bold px-8 py-4 order-5 hover:bg-ar-lightblue"
+                className="shadow-custom rounded-full bg-white text-ar-navy font-bold px-8 py-4 order-5 hover:bg-ar-lightblue"
               >
                 {/* transition-all ease-in-out duration-300 */}
                 お問合せはこちら

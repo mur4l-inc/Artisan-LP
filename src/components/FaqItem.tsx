@@ -30,7 +30,7 @@ export const FaqItem: FC<Props> = ({ question, answer }) => {
     >
       <dl className="">
         <dt
-          className={`text-lg font-semibold text-ar-regular mb-4 md:cursor-auto cursor-pointer pr-8 md:pr-0 ${
+          className={`text-base font-semibold text-ar-regular mb-4 md:cursor-auto cursor-pointer pr-8 md:pr-0 ${
             style.faqItem
           } ${!isOpen && isSmallScreen ? "!mb-0" : style.isOpen}
           `}

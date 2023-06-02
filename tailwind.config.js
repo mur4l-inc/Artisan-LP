@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        custom: '0 4px 20px rgba(0, 0, 0, 0.2)',
+      },
       screens: {
         'xs': '480px',
       },

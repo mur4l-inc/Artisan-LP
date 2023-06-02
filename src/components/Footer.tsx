@@ -30,7 +30,7 @@ export default function Footer() {
             お問合せはこちら
           </a>
         </div> */}
-        <div className="flex justify-center">
+        <div className="flex justify-center md:mx-0 -mx-6">
           <iframe
             ref={iframeRef}
             src="https://docs.google.com/forms/d/e/1FAIpQLSc3uQL6mpKZmctjAfqypVeHLw4sZH9nzMMw1wf2bbfXLjpcOA/viewform?embedded=true"
