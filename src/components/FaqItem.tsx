@@ -24,7 +24,7 @@ export const FaqItem: FC<Props> = ({ question, answer }) => {
     }
   };
 
-  return (
+  return question ? (
     <div
       className={`p-6 flex flex-col flex-1 items-start text-left space-y-4 bg-ar-gray rounded-xl ${style.faqCard}`}
     >
@@ -33,7 +33,7 @@ export const FaqItem: FC<Props> = ({ question, answer }) => {
           className={`text-base font-semibold text-ar-regular mb-4 md:cursor-auto cursor-pointer pr-8 md:pr-0 ${
             style.faqItem
           } ${!isOpen && isSmallScreen ? "!mb-0" : style.isOpen}
-          `}
+              `}
           onClick={handleClick}
         >
           {question}
@@ -43,5 +43,5 @@ export const FaqItem: FC<Props> = ({ question, answer }) => {
         )}
       </dl>
     </div>
-  );
+  ) : null;
 };

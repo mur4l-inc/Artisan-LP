@@ -106,12 +106,6 @@ export default function Pricing() {
                 )
               )}
             </p>
-            {/* <div className="w-full px-2">
-              <hr className="w-full" />
-            </div> */}
-            {/* <p className="text-sm text-left text-gray-600">
-              BodyテキストBodyテキスト
-            </p> */}
           </div>
 
           <div
@@ -149,12 +143,6 @@ export default function Pricing() {
                 )
               )}
             </p>
-            {/* <div className="w-full px-2">
-              <hr className="w-full" />
-            </div> */}
-            {/* <p className="text-sm text-left text-gray-600">
-              BodyテキストBodyテキスト
-            </p> */}
           </div>
 
           <div
@@ -194,12 +182,6 @@ export default function Pricing() {
                 )
               )}
             </p>
-            {/* <div className="w-full px-2">
-              <hr className="w-full" />
-            </div> */}
-            {/* <p className="text-sm text-left text-gray-600">
-              BodyテキストBodyテキスト
-            </p> */}
           </div>
         </div>
       </section>

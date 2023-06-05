@@ -41,10 +41,6 @@ export default function QA() {
         const Answer_1 = getValue(remoteConfig, "Answer_1").asString();
         const Question_2 = getValue(remoteConfig, "Question_2").asString();
         const Answer_2 = getValue(remoteConfig, "Answer_2").asString();
-        const EnterPrisePlanPriceValue = getValue(
-          remoteConfig,
-          "Question_2"
-        ).asString();
         const Question_3 = getValue(remoteConfig, "Question_3").asString();
         const Answer_3 = getValue(remoteConfig, "Answer_3").asString();
         const Question_4 = getValue(remoteConfig, "Question_4").asString();
@@ -55,6 +51,12 @@ export default function QA() {
         const Answer_6 = getValue(remoteConfig, "Answer_6").asString();
         const Question_7 = getValue(remoteConfig, "Question_7").asString();
         const Answer_7 = getValue(remoteConfig, "Answer_7").asString();
+        const Question_8 = getValue(remoteConfig, "Question_8").asString();
+        const Answer_8 = getValue(remoteConfig, "Answer_8").asString();
+        const Question_9 = getValue(remoteConfig, "Question_9").asString();
+        const Answer_9 = getValue(remoteConfig, "Answer_9").asString();
+        const Question_10 = getValue(remoteConfig, "Question_10").asString();
+        const Answer_10 = getValue(remoteConfig, "Answer_10").asString();
 
         setFaqList([
           {
@@ -90,6 +92,21 @@ export default function QA() {
           {
             question: Question_7,
             answer: Answer_7,
+            isOpen: false,
+          },
+          {
+            question: Question_8,
+            answer: Answer_8,
+            isOpen: false,
+          },
+          {
+            question: Question_9,
+            answer: Answer_9,
+            isOpen: false,
+          },
+          {
+            question: Question_10,
+            answer: Answer_10,
             isOpen: false,
           },
         ]);
@@ -129,24 +146,6 @@ export default function QA() {
               </i>
             </p>
           ) : faqList.length > 0 ? (
-            // faqList.map((faq: faq, index) => (
-            //   <div
-            //     key={faq.question}
-            //     className={`p-6 flex flex-col flex-1 items-center text-left space-y-4 bg-ar-gray rounded-xl ${style.faqCard}`}
-            //   >
-            //     <dl>
-            //       <dt
-            //         className="text-lg font-semibold text-ar-regular mb-4"
-            //         onClick={(e) => {
-
-            //         }}
-            //       >
-            //         {faq.question}
-            //       </dt>
-            //       <dd className="text-ar-regular text-base">{faq.answer}</dd>
-            //     </dl>
-            //   </div>
-            // ))
             faqList.map((faq: faq, index) => (
               <FaqItem
                 key={faq.question}

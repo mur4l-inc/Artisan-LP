@@ -22,14 +22,6 @@ export default function Footer() {
           <br />
           *法人・個人ともにご相談を受け付けています。
         </p>
-        {/* <div className="flex justify-center">
-          <a
-            href=""
-            className="inline-block mt-16 mx-auto w-auto rounded-full bg-white text-ar-navy font-bold px-8 py-4"
-          >
-            お問合せはこちら
-          </a>
-        </div> */}
         <div className="flex justify-center md:mx-0 -mx-6">
           <iframe
             ref={iframeRef}
