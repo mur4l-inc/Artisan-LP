@@ -5,7 +5,7 @@ import style from "./Capability.module.scss";
 
 export default function Capability() {
   return (
-    <article className="pt-16 pb-24 bg-second-sp lg:bg-second-pc bg-cover bg-right-top">
+    <article className="pt-16 pb-24 bg-second-sp-2 lg:bg-second-pc bg-cover bg-right-top">
       <section
         id="capabilities"
         className={`flex flex-col max-w-5xl mx-auto lg:px-0 ${style.capability} w-[calc(100%-64px)] lg:w-[calc(100%-128px)]`}

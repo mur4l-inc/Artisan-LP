@@ -5,7 +5,7 @@ import style from "./Hero.module.scss";
 
 export default function Hero() {
   return (
-    <article className="bg-black bg-first-sp md:bg-first-pc bg-cover bg-right-top">
+    <article className="bg-black bg-first-sp-2 md:bg-first-pc bg-cover bg-right-top">
       <section className="flex flex-col max-w-5xl mx-auto w-[calc(100%-64px)] lg:w-[calc(100%-128px)]">
         <div
           className={`flex flex-1 flex-col md:flex-row md:mt-28 mt-16 !px-0 md:!px-8 ${style.container}`}
@@ -37,8 +37,8 @@ export default function Hero() {
                       loop
                       playsInline
                     >
-                      <source src="./movie_1.webm" type="video/webm" />
-                      <source src="./movie_1.mp4" type="video/mp4" />
+                      {/* <source src="./movie_1.webm" type="video/webm" />
+                      <source src="./movie_1.mp4" type="video/mp4" /> */}
                     </video>
                   </div>
                 </div>
@@ -69,8 +69,8 @@ export default function Hero() {
                   muted
                   loop
                 >
-                  <source src="./movie_1.webm" type="video/webm" />
-                  <source src="./movie_1.mp4" type="video/mp4" />
+                  {/* <source src="./movie_1.webm" type="video/webm" />
+                  <source src="./movie_1.mp4" type="video/mp4" /> */}
                 </video>
               </div>
             </div>

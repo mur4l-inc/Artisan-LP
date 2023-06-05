@@ -29,7 +29,9 @@ export default function Marketing() {
               alt="エンゲージメント"
               className={`${style.capabilityImage}`}
             />
-            <h3 className="text-lg font-semibold">エンゲージメント</h3>
+            <h3 className="text-lg font-semibold text-ar-regular">
+              エンゲージメント
+            </h3>
             <p className="text-sm text-left text-gray-600">
               ARフィルターが魅力的なデザインと独創的なエフェクトで、ユーザーの心を魅了します。
               エンゲージメントの向上により、ブランドとユーザーが一体化します。
@@ -44,7 +46,9 @@ export default function Marketing() {
               alt="SNSコミュニケーション創出"
               className={`${style.capabilityImage}`}
             />
-            <h3 className="text-lg font-semibold">SNSコミュニケーション創出</h3>
+            <h3 className="text-lg font-semibold text-ar-regular">
+              SNSコミュニケーション創出
+            </h3>
             <p className="text-sm text-left text-gray-600">
               ARエフェクトの印象的な魅力は、ユーザーが喜んでシェアすることを促します。シェアがシェアを呼び連鎖的なバズにつながることも。
               SNSの注目度が高まり、新たな顧客層の獲得やリーチ拡大が見込めます。
@@ -59,7 +63,9 @@ export default function Marketing() {
               alt="ブランド認知"
               className={`${style.capabilityImage}`}
             />
-            <h3 className="text-lg font-semibold">ブランド認知</h3>
+            <h3 className="text-lg font-semibold text-ar-regular">
+              ブランド認知
+            </h3>
             <p className="text-sm text-left text-gray-600">
               身近なコミュニケーションであるARフィルターを通じてブランドが認知されます。
               シェアや口コミが増えることで、ブランドの露出が向上します。

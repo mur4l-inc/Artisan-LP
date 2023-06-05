@@ -72,7 +72,7 @@ export default function Pricing() {
 
         <div className="flex flex-col md:flex-row justify-around mt-12 gap-7">
           <div
-            className={`py-6 flex flex-col flex-1 items-center text-center space-y-4 bg-white rounded-xl ${style.card}`}
+            className={`py-8 flex flex-col flex-1 items-center text-center space-y-4 bg-white rounded-xl ${style.card}`}
           >
             <Image
               src="light-plan.svg"
@@ -81,7 +81,9 @@ export default function Pricing() {
               alt="ライトプラン"
               className={`mx-auto`}
             />
-            <h3 className="text-lg font-semibold">Light Plan</h3>
+            <h3 className="text-lg font-semibold text-ar-regular">
+              Light Plan
+            </h3>
             <p className="!mt-0 text-sm text-ar-regular">Dev</p>
             <p className="text-2xl text-ar-regular">
               {isError ? (
@@ -104,16 +106,16 @@ export default function Pricing() {
                 )
               )}
             </p>
-            <div className="w-full px-2">
+            {/* <div className="w-full px-2">
               <hr className="w-full" />
-            </div>
-            <p className="text-sm text-left text-gray-600">
+            </div> */}
+            {/* <p className="text-sm text-left text-gray-600">
               BodyテキストBodyテキスト
-            </p>
+            </p> */}
           </div>
 
           <div
-            className={`py-6 flex flex-col flex-1 items-center text-center space-y-4 bg-white rounded-xl ${style.card}`}
+            className={`py-8 flex flex-col flex-1 items-center text-center space-y-4 bg-white rounded-xl ${style.card}`}
           >
             <Image
               src="middle-plan.svg"
@@ -122,7 +124,9 @@ export default function Pricing() {
               alt="ミドルプラン"
               className={`mx-auto`}
             />
-            <h3 className="text-lg font-semibold">Middle Plan</h3>
+            <h3 className="text-lg font-semibold text-ar-regular">
+              Middle Plan
+            </h3>
             <p className="!mt-0 text-sm text-ar-regular">＋3D ＋High level</p>
             <p className="text-2xl text-ar-regular">
               {isError ? (
@@ -145,16 +149,16 @@ export default function Pricing() {
                 )
               )}
             </p>
-            <div className="w-full px-2">
+            {/* <div className="w-full px-2">
               <hr className="w-full" />
-            </div>
-            <p className="text-sm text-left text-gray-600">
+            </div> */}
+            {/* <p className="text-sm text-left text-gray-600">
               BodyテキストBodyテキスト
-            </p>
+            </p> */}
           </div>
 
           <div
-            className={`py-6 flex flex-col flex-1 items-center text-center space-y-4 bg-white rounded-xl ${style.card}`}
+            className={`py-8 flex flex-col flex-1 items-center text-center space-y-4 bg-white rounded-xl ${style.card}`}
           >
             <Image
               src="enterprise-plan.svg"
@@ -163,7 +167,9 @@ export default function Pricing() {
               alt="エンタープライズプラン"
               className={`mx-auto`}
             />
-            <h3 className="text-lg font-semibold">Enterprise Plan</h3>
+            <h3 className="text-lg font-semibold text-ar-regular">
+              Enterprise Plan
+            </h3>
             <p className="!mt-0 text-sm text-ar-regular">
               ＋3D ＋High level +PR
             </p>
@@ -188,12 +194,12 @@ export default function Pricing() {
                 )
               )}
             </p>
-            <div className="w-full px-2">
+            {/* <div className="w-full px-2">
               <hr className="w-full" />
-            </div>
-            <p className="text-sm text-left text-gray-600">
+            </div> */}
+            {/* <p className="text-sm text-left text-gray-600">
               BodyテキストBodyテキスト
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
