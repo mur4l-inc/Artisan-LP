@@ -37,8 +37,8 @@ export default function Hero() {
                       loop
                       playsInline
                     >
-                      <source src="./movie_1.webm" type="video/webm" />
-                      <source src="./movie_1.mp4" type="video/mp4" />
+                      <source src="./movie_2.webm" type="video/webm" />
+                      <source src="./movie_2.mp4" type="video/mp4" />
                     </video>
                   </div>
                 </div>
@@ -69,8 +69,8 @@ export default function Hero() {
                   muted
                   loop
                 >
-                  <source src="./movie_1.webm" type="video/webm" />
-                  <source src="./movie_1.mp4" type="video/mp4" />
+                  <source src="./movie_2.webm" type="video/webm" />
+                  <source src="./movie_2.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
