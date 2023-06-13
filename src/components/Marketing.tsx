@@ -17,7 +17,7 @@ export default function Marketing() {
           マーケティング効果
         </h3>
         <p className="text-ar-regular text-base">
-          BodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBodyテキストBody
+          Instagram ARを利用して、参加型のマーケティングへ
         </p>
 
         <div className="flex flex-col md:flex-row justify-around mt-12 mb-16 gap-7">
@@ -33,8 +33,7 @@ export default function Marketing() {
               エンゲージメント
             </h3>
             <p className="text-sm text-left text-gray-600">
-              ARフィルターが魅力的なデザインと独創的なエフェクトで、ユーザーの心を魅了します。
-              エンゲージメントの向上により、ブランドとユーザーが一体化します。
+              魅力的なデザインと独創的なエフェクトが、ユーザの心を魅了します。参加型のARによりエンゲージメントを向上。ブランドとユーザーの距離を縮めます。
             </p>
           </div>
 

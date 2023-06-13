@@ -67,7 +67,7 @@ export default function Pricing() {
           ご利用料金
         </h3>
         <p className="text-ar-regular text-base">
-          INSTAGRAM/METASPARKのAR開発費用
+          Instagram / MetaSparkのエフェクト制作・開発費用
         </p>
 
         <div className="flex flex-col md:flex-row justify-around mt-12 gap-7">
