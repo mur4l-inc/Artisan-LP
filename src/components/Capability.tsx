@@ -46,7 +46,7 @@ export default function Capability() {
           </div>
 
           <div className="flex flex-col md:flex-row md:justify-start justify-center">
-            <div className={`md:ml-8 lg:ml-2 shrink-0 flex justify-center`}>
+            <div className={`md:ml-8 lg:ml-0 shrink-0 flex justify-center`}>
               <figure className={`${style.capabilityImageWrapper}`}>
                 <Image
                   src="/capa_2a.webp"
@@ -96,7 +96,7 @@ export default function Capability() {
           </div>
 
           <div className="flex flex-col md:flex-row md:justify-start justify-center">
-            <div className={`md:ml-10 lg:ml-2 shrink-0 flex justify-center`}>
+            <div className={`md:ml-10 lg:ml-0 shrink-0 flex justify-center`}>
               <figure className={`${style.capabilityImageWrapper}`}>
                 <Image
                   src="/capa_4a.webp"
