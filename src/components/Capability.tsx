@@ -25,13 +25,15 @@ export default function Capability() {
         >
           <div className="flex flex-col md:flex-row md:justify-start justify-center">
             <div className={`ml-0 shrink-0 flex justify-center`}>
-              <Image
-                src="/capa_1.webp"
-                width="200"
-                height="200"
-                alt="Artisanとは"
-                className={`${style.capabilityImage}`}
-              />
+              <figure className={`${style.capabilityImageWrapper}`}>
+                <Image
+                  src="/capa_1a.webp"
+                  width="102"
+                  height="184"
+                  alt="フェイスフィルター"
+                  className={`${style.capabilityImage}`}
+                />
+              </figure>
             </div>
             <div className={`${style.capabilityItemText}`}>
               <p className="my-2 mx-3 text-white text-xl font-bold text-center md:text-left">
@@ -44,17 +46,19 @@ export default function Capability() {
           </div>
 
           <div className="flex flex-col md:flex-row md:justify-start justify-center">
-            <div className={`md:ml-8 lg:ml-12 shrink-0 flex justify-center`}>
-              <Image
-                src="/capa_2.webp"
-                width="200"
-                height="200"
-                alt="Artisanとは"
-                className={`${style.capabilityImage}`}
-              />
+            <div className={`md:ml-8 lg:ml-2 shrink-0 flex justify-center`}>
+              <figure className={`${style.capabilityImageWrapper}`}>
+                <Image
+                  src="/capa_2a.webp"
+                  width="164"
+                  height="123"
+                  alt="画像認識フィルター"
+                  className={`${style.capabilityImageHorizontal}`}
+                />
+              </figure>
             </div>
             <div className={`${style.capabilityItemText}`}>
-              <p className="my-2 mx-3 text-white text-xl font-bold text-center md:text-left">
+              <p className="-mt-2 mb-2 md:my-2 mx-3 text-white text-xl font-bold text-center md:text-left">
                 画像認識フィルター
               </p>
               <p className="my-3 mx-3 text-white text-sm text-center md:text-left">
@@ -71,16 +75,18 @@ export default function Capability() {
             <div
               className={`md:ml-30 lg:ml-14 pl-1 shrink-0 flex justify-center`}
             >
-              <Image
-                src="/capa_3.webp"
-                width="200"
-                height="200"
-                alt="Artisanとは"
-                className={`${style.capabilityImage}`}
-              />
+              <figure className={`${style.capabilityImageWrapper}`}>
+                <Image
+                  src="/capa_3a.webp"
+                  width="164"
+                  height="123"
+                  alt="平面認識フィルター"
+                  className={`${style.capabilityImageHorizontal}`}
+                />
+              </figure>
             </div>
             <div className={`${style.capabilityItemText}`}>
-              <p className="my-2 mx-3 text-white text-xl font-bold text-center md:text-left">
+              <p className="-mt-2 mb-2 md:my-2 mx-3 text-white text-xl font-bold text-center md:text-left">
                 平面認識フィルター
               </p>
               <p className="my-3 mx-3 text-white text-sm text-center md:text-left">
@@ -90,14 +96,16 @@ export default function Capability() {
           </div>
 
           <div className="flex flex-col md:flex-row md:justify-start justify-center">
-            <div className={`md:ml-10 lg:ml-14 shrink-0 flex justify-center`}>
-              <Image
-                src="/capa_4.webp"
-                width="200"
-                height="200"
-                alt="Artisanとは"
-                className={`${style.capabilityImage}`}
-              />
+            <div className={`md:ml-10 lg:ml-2 shrink-0 flex justify-center`}>
+              <figure className={`${style.capabilityImageWrapper}`}>
+                <Image
+                  src="/capa_4a.webp"
+                  width="102"
+                  height="184"
+                  alt="ARゲーム"
+                  className={`${style.capabilityImage}`}
+                />
+              </figure>
             </div>
             <div className={`${style.capabilityItemText}`}>
               <p className="my-2 mx-3 text-white text-xl font-bold text-center md:text-left">

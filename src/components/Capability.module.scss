@@ -31,6 +31,25 @@
   .capabilityItemText {
     max-width: 100% !important;
   }
+  // .capabilityImage {
+  //   width: 200px !important;
+  //   height: 200px !important;
+  // }
+
+  // .capabilityImageWrapper {
+  //   width: 200px !important;
+  //   height: 200px !important;
+  // }
+
+  .capabilityImage {
+    width: 111px !important;
+    height: auto !important;
+  }
+
+  .capabilityImageHorizontal {
+    width: 178px !important;
+    height: auto !important;
+  }
 }
 
 .capabilityItemText {
@@ -39,9 +58,31 @@
   align-self: center;
 }
 
+// .capabilityImage {
+//   width: 232px;
+//   height: 232px;
+// }
+
 .capabilityImage {
-  width: 200px;
-  height: 200px;
+  width: 102px;
+  height: 184px;
+  position: relative;
+  z-index: 10;
+}
+
+.capabilityImageHorizontal {
+  width: 164px;
+  height: 123px;
+  position: relative;
+  z-index: 10;
+}
+
+.capabilityImageWrapper {
+  width: 232px;
+  height: 232px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 // .aboutTitle {
@@ -71,4 +112,43 @@
 
 // .aboutContainer {
 //   padding: 52px 64px 52px 42px;
+// }
+
+.capabilityItem:nth-of-type(1) div:nth-of-type(1) .capabilityImageWrapper {
+  position: relative;
+}
+.capabilityItem .capabilityImageWrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 164px;
+  height: 164px;
+  background-image: url(/ellipse-line.png);
+  background-size: contain;
+  background-position: center;
+  mix-blend-mode: overlay;
+}
+
+.capabilityItem .capabilityImageWrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 204px;
+  height: 204px;
+  background-image: url(/ellipse-bg.png);
+  background-size: contain;
+  background-position: center;
+  mix-blend-mode: overlay;
+}
+
+// .capabilityItem:nth-of-type(1) div:nth-of-type(2) .capabilityImageWrapper {
+//   background-color: orange;
+// }
+
+// .capabilityItem:nth-of-type(2) div:nth-of-type(1) .capabilityImageWrapper {
+//   background-color: blue;
+// }
+
+// .capabilityItem:nth-of-type(2) div:nth-of-type(2) .capabilityImageWrapper {
+//   background-color: green;
 // }
