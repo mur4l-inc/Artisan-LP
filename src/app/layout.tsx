@@ -1,4 +1,5 @@
 import "./globals.css";
+import Analytics from "./Analytics";
 import { Inter } from "next/font/google";
 import { jost, noto, notojp } from "./fonts";
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${jost.variable} ${notojp.variable} ${noto.variable}`}>
+        <Analytics />
         {children}
       </body>
     </html>
