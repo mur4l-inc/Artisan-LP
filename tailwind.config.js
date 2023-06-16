@@ -28,7 +28,8 @@ module.exports = {
         'about-sp': "url('/about_sp.webp')",
       },
       fontFamily: {
-        sans: ['var(--font-notojp)', 'var(--font-noto)', 'var(--font-jost)', ...defaultTheme.fontFamily.sans],
+        // sans: ['var(--font-notojp)', 'var(--font-noto)', 'var(--font-jost)', ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-notojp)', 'var(--font-noto)', 'var(--font-jost)'],
       },
       fontSize: {
         heroTag: ['28px', 1.4285],

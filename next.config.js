@@ -9,7 +9,6 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "**",
-        // hostname: "image.tmdb.org",
       },
     ],
     unoptimized: true

@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { notojp } from "@/app/fonts";
 import style from "./QA.module.scss";
 import { FaqItem } from "./FaqItem";
 
@@ -148,7 +147,7 @@ export default function QA() {
           ) : faqList.length > 0 ? (
             faqList.map((faq: faq, index) => (
               <FaqItem
-                key={faq.question}
+                key={faq.question + index}
                 question={faq.question}
                 answer={faq.answer}
               />
