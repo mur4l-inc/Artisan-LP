@@ -1,29 +1,7 @@
-import { jost, noto } from "../app/fonts";
 import style from "./Navbar.module.scss";
 
 export default function OverlayMenu({ isOpen, handleClick }: any) {
   return (
-    // <div
-    //   className={`right-0 ${style.navBar} ${
-    //     isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
-    //   } fixed flex justify-center inset-0 z-40 bg-ar-navy space-y-4 overflow-y-auto transition-all duration-500 ease-in-out transform`}
-    // >
-    // <div
-    //   className={`right-0 w-[400px] ${style.navBar} ${
-    //     isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
-    //   } fixed flex justify-center inset-0 z-40 bg-ar-navy space-y-4 overflow-y-auto transition-all duration-500 ease-in-out transform`}
-    // >
-    // <div
-    //   className={`right-0 w-[400px] ${style.navBar} ${
-    //     isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
-    //   } fixed flex justify-center inset-0 z-40 bg-ar-navy space-y-4 overflow-y-auto transition-all duration-500 ease-in-out transform right-0`}
-    // >
-    //   <nav className="flex flex-col items-center justify-start py-4">
-    // <div
-    //   className={`right-0 w-96 ${style.navBar} ${
-    //     isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
-    //   } fixed flex justify-center items-start h-full inset-y-0 z-40 bg-ar-navy space-y-4 overflow-y-auto transition-all duration-500 ease-in-out transform`}
-    // >
     <div
       className={`right-0 md:w-96 w-full ${style.navBar} ${
         isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"

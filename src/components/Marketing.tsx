@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { notojp } from "@/app/fonts";
 import style from "./Marketing.module.scss";
 
 export default function Marketing() {

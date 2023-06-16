@@ -2,11 +2,6 @@
   padding: 0 100px;
 }
 
-.marketing {
-  // background: #fff;
-  // margin-top: 96px;
-}
-
 .marketing h2 {
   font-size: 28px;
   line-height: 1.425;
@@ -23,7 +18,7 @@
   position: absolute;
   top: -8px;
   left: -8px;
-  border-top: 104px solid #80A4FF;
+  border-top: 104px solid #80a4ff;
   border-right: 104px solid transparent;
   width: 0;
   height: 0;
@@ -41,65 +36,3 @@
   width: 52px;
   text-align: center;
 }
-
-// @media (max-width: 639px) {
-//   .capabilityItem {
-//     flex-direction: column;
-//     gap: 16px;
-//   }
-// }
-
-// @media (max-width: 1023px) {
-//   .capabilityItem {
-//     // max-width: 288px;
-//   }
-//   .capabilityItem > div {
-//     flex: 1 1 100%;
-//   }
-//   .capabilityItem > div > div {
-//     margin-left: 0;
-//     padding-left: 0;
-//   }
-//   .capabilityItemText {
-//     max-width: 100% !important;
-//   }
-// }
-
-
-// .capabilityItemText {
-//   max-width: 188px;
-// }
-
-// .capabilityImage {
-//   width: 104px;
-//   height: 104px;
-// }
-
-// // .aboutTitle {
-// //   font-size: 28px;
-// //   line-height: 1.425;
-// //   font-weight: bold;
-// //   font-family: var(--font-noto);
-// //   color: #111;
-// //   margin-top: 32px;
-// //   // margin-bottom: 24px;
-// // }
-
-// // .aboutTitle ruby {
-// //   letter-spacing: 1px;
-// // }
-
-// // .aboutTitle ruby::before {
-// //   font-size: 12px;
-// //   letter-spacing: 7px;
-// // }
-
-// // .aboutTitleImage {
-// //   flex: 1 0 auto;
-// //   display: flex;
-// //   justify-content: flex-end;
-// // }
-
-// // .aboutContainer {
-// //   padding: 52px 64px 52px 42px;
-// // }
