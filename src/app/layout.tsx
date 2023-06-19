@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 const title = "Instagram Effect ARならArtisan";
 const description =
   "Instagramのエフェクトを気軽に制作するなら、Artisan。Instagramで使えるARやエフェクトを代行制作するソリューションです。クオリティの高いエフェクトで製品や宣伝を盛り上げます。";
-const url = "https://artisanlp.netlify.app";
+const url = "https://artisan-seven.vercel.app/";
 export const metadata = {
   title,
   description,
