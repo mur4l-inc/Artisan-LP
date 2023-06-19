@@ -2,6 +2,7 @@ import "./globals.css";
 import Analytics from "./Analytics";
 import { Inter } from "next/font/google";
 import { jost, noto, notojp } from "./fonts";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 const title = "Instagram Effect ARならArtisan";
@@ -44,7 +45,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${jost.variable} ${notojp.variable} ${noto.variable}`}>
-        <Analytics />
+        <Suspense>
+          <Analytics />
+        </Suspense>
         {children}
       </body>
     </html>
