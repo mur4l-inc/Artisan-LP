@@ -18,6 +18,15 @@ export const metadata = {
     siteName: title,
     locale: "ja_JP",
     type: "website",
+    images: [
+      {
+        url: "/artisan_ogp.webp",
+        width: 1200,
+        height: 630,
+        alt: title,
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
