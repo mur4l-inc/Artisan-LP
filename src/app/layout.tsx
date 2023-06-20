@@ -35,9 +35,6 @@ export const metadata = {
     description,
   },
   metadataBase: new URL(process.env.URL ?? url),
-  googleSiteVerification: {
-    content: "JU44e3ofDPS9m52UT64VQYIh9QBRnaNOXZNCAGXvGWU",
-  },
 };
 
 export default function RootLayout({
@@ -47,6 +44,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <meta
+        name="google-site-verification"
+        content="JU44e3ofDPS9m52UT64VQYIh9QBRnaNOXZNCAGXvGWU"
+      />
       <body className={`${jost.variable} ${notojp.variable} ${noto.variable}`}>
         <Suspense>
           <Analytics />
