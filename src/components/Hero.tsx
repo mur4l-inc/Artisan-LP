@@ -53,7 +53,6 @@ export default function Hero() {
                 href="#inquiry"
                 className="shadow-custom rounded-full bg-white text-ar-navy font-bold px-8 py-4 order-5 hover:bg-ar-lightblue"
               >
-                {/* transition-all ease-in-out duration-300 */}
                 お問合せはこちら
               </a>
             </div>
@@ -84,10 +83,7 @@ export default function Hero() {
           <div className="flex w-full">
             <div className="flex-1 hidden md:block bg-about-pc lg:bg-contain bg-cover bg-center bg-no-repeat"></div>
             <div className="flex-1">
-              <div
-                // className={`flex flex-col !pb-24 md:!pb-14 ${style.aboutContainer}`}
-                className={`flex flex-col ${style.aboutContainer}`}
-              >
+              <div className={`flex flex-col ${style.aboutContainer}`}>
                 <h2 className="text-ar-purple font-semibold mb-8 md:mb-4">
                   About
                 </h2>
