@@ -31,6 +31,7 @@ export default function Hero() {
                   <div className="ios-frame-inner">
                     <video
                       className="video-in-frame"
+                      poster="./poster.jpg"
                       width="220"
                       autoPlay
                       muted
@@ -63,6 +64,7 @@ export default function Hero() {
               <div className="ios-frame-inner">
                 <video
                   className="video-in-frame"
+                  poster="./poster.jpg"
                   width="220"
                   autoPlay
                   muted
