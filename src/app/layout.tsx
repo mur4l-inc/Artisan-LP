@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/artisan_ogp.webp",
+        url: "/artisan_ogp.png",
         width: 1200,
         height: 630,
         alt: title,
